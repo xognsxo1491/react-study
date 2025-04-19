@@ -1,19 +1,27 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Dashboard from "./components/dashboard/Dashboard";
-import Tech001 from "./components/tech001/Tech001";
+import React from "react";
+import UserContext from "./context/UserContext";
 
-import './App.css';
+import Dashboard from "./components/Dashboard";
+import Tech002 from "./components/Tech002";
+import Tech003 from "./components/Tech003";
 
 function App() {
+
     return (
-        <div style={{ margin: '24px' }}>
-            <BrowserRouter>
-                <Routes>
-                    <Route path="/" element={<Dashboard />} />
-                    <Route path="/tech001" element={<Tech001 />} />
-                </Routes>
-            </BrowserRouter>
-        </div>
+        <UserContext.Provider value="홍길동">
+
+            <div style={{ margin: '24px' }}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Dashboard />} />
+                        <Route path="/tech002" element={<Tech002 />} />
+                        <Route path="/tech003" element={<Tech003 />} />
+                    </Routes>
+                </BrowserRouter>
+            </div>
+
+        </UserContext.Provider>
     );
 }
 

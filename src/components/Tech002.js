@@ -22,7 +22,7 @@ function Counter() {
     )
 }
 
-function Tech001() {
+function Tech002() {
     return (
         <>
             <Greeting />
@@ -34,4 +34,4 @@ function Tech001() {
     );
 }
 
-export default Tech001;
+export default Tech002;
