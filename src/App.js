@@ -2,9 +2,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import React from "react";
 import UserContext from "./context/UserContext";
 
-import Dashboard from "./components/Dashboard";
-import Tech002 from "./components/Tech002";
-import Tech003 from "./components/Tech003";
+import Dashboard from "./pages/Dashboard";
+import Tech002 from "./pages/Tech002";
+import Tech003 from "./pages/Tech003";
 
 function App() {
 
